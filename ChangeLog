@@ -1,0 +1,115 @@
+2015-12-13 13:41  swilson
+
+	* lockfile.sh (1.6): Move functions to user-check.sh and call them.
+
+2015-12-13 13:37  swilson
+
+	* user-check.sh (1.6): Add functions to check world-writable
+	  directory and writable directory.
+
+2015-12-12 11:09  swilson
+
+	* user-check.sh (1.5): Check EUID as well.
+
+2015-12-12 10:48  hlein
+
+	* lockfile.sh (1.5): Rough implementation of checking that the
+	  lockfile destination directory is not world-writable, and is
+	  writable by us.
+
+2015-12-12 10:43  swilson
+
+	* user-check.sh (1.4): Correct logic.
+
+2015-12-12 10:41  swilson
+
+	* TODO (1.2), arrays.sh (1.4), lockfile.sh (1.4), msg-handling.sh
+	  (1.14), pass-chooser.sh (1.4), user-check.sh (1.3): Add Id lines.
+
+2015-10-29 22:13  swilson
+
+	* msg-handling.sh (1.13): Can not tell if a file is writeable yet.
+
+2015-10-29 21:58  swilson
+
+	* msg-handling.sh (1.12): Define a /private/ function to allow
+	  debugging to output to a file.
+
+2015-10-28 06:01  swilson
+
+	* msg-handling.sh (1.11): Correct syntax.
+
+2015-10-27 11:41  swilson
+
+	* msg-handling.sh (1.10): Do not try to do math if debug contains
+	  has =.
+
+2015-10-27 11:23  swilson
+
+	* msg-handling.sh (1.9): Fix logic.
+
+2015-10-27 11:20  swilson
+
+	* msg-handling.sh (1.8): Correct documentation.
+
+2015-10-27 11:17  swilson
+
+	* msg-handling.sh (1.7): Treat debug numbers are absolute values
+	  and =number just prints that debug value.
+
+2015-10-27 10:53  swilson
+
+	* msg-handling.sh (1.6): Without a level, should not print a
+	  message if debug is 0.
+
+2015-10-27 10:11  swilson
+
+	* msg-handling.sh (1.5): Correction.
+
+2015-10-27 10:01  swilson
+
+	* msg-handling.sh (1.4): Style.
+
+2015-10-27 10:00  swilson
+
+	* msg-handling.sh (1.3): Allow signs in numbers and only print
+	  absolute debug level messages for negative values and allow for
+	  no level in debug.
+
+2015-10-25 21:04  swilson
+
+	* pass-chooser.sh (1.3): Add whatpass resource.
+
+2015-10-25 20:42  swilson
+
+	* pass-chooser.sh (1.2): Add documentation/resources and remove
+	  path variable (was not well baked, potential to overwrite the a
+	  veriable of the caller, etc).
+
+2015-10-25 20:15  swilson
+
+	* arrays.sh (1.3): Add dependancy.
+
+2015-10-24 16:08  swilson
+
+	* arrays.sh (1.2), lockfile.sh (1.3): Update documentationa.
+
+2015-09-23 07:02  swilson
+
+	* msg-handling.sh (1.2): Match numbers - not everything but.
+
+2015-09-23 06:44  swilson
+
+	* lockfile.sh (1.2), user-check.sh (1.2): Can not source as a ./ as
+	  the path is indeterminate when packing them.
+
+2015-09-14 16:08  swilson
+
+	* user-check.sh (1.1): Initial file to check user permissions.
+
+2015-09-09 07:07  swilson
+
+	* TODO (1.1), arrays.sh (1.1), lockfile.sh (1.1), msg-handling.sh
+	  (1.1), pass-chooser.sh (1.1): Split out common bash functions
+	  into a libs directory.
+
